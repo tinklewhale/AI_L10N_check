@@ -17,43 +17,44 @@
 
 ## 설치 방법
 
+### 방법 1: 실행 파일 사용 (권장 - Python 설치 불필요)
+
+1. GitHub에서 `자동검수/dist/AI번역검수도구.exe` 파일을 다운로드
+2. 파일을 더블클릭하여 실행
+3. 끝! (Python 설치 불필요)
+
+### 방법 2: 소스 코드에서 실행
+
 1. Python 3.8 이상이 설치되어 있어야 합니다.
 
 2. 필요한 패키지 설치:
 
 ```bash
+cd 자동검수
 pip install -r requirements.txt
 ```
 
-## 사용 방법
-
-### 방법 1: Python으로 직접 실행
+3. 프로그램 실행:
 
 ```bash
-cd 자동검수
-pip install -r requirements.txt
 python gui_app.py
 ```
 
-### 방법 2: 실행 파일(.exe)로 실행 (권장)
+### 방법 3: 소스 코드에서 실행 파일 빌드
 
-1. **실행 파일 생성:**
+1. Python 3.8 이상 설치
+2. 필요한 패키지 설치:
+   ```bash
+   cd 자동검수
+   pip install -r requirements.txt
+   ```
+3. 실행 파일 빌드:
+   ```bash
+   build_exe.bat
+   ```
+4. `dist` 폴더에 생성된 `AI번역검수도구.exe` 실행
 
-   - `자동검수` 폴더에서 `build_exe.bat` 파일을 더블클릭
-   - 또는 명령 프롬프트에서:
-     ```bash
-     cd 자동검수
-     build_exe.bat
-     ```
-   - 빌드가 완료되면 `dist` 폴더에 `AI번역검수도구.exe` 파일이 생성됩니다.
-
-2. **실행 파일 실행:**
-   - `dist\AI번역검수도구.exe` 파일을 더블클릭하여 실행
-   - 이 파일을 다른 컴퓨터로 복사해도 실행 가능합니다 (Python 설치 불필요)
-
----
-
-### 프로그램 사용 방법
+## 사용 방법
 
 1. API 키 입력:
 
