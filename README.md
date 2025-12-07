@@ -20,8 +20,12 @@
 ### 방법 1: 실행 파일 사용 (권장 - Python 설치 불필요)
 
 1. GitHub에서 `자동검수/dist/AI번역검수도구.exe` 파일을 다운로드
+   - [Releases 페이지](https://github.com/tinklewhale/AI_L10N_check/releases)에서 최신 버전 다운로드
+   - 또는 저장소의 `자동검수/dist/` 폴더에서 직접 다운로드
 2. 파일을 더블클릭하여 실행
 3. 끝! (Python 설치 불필요)
+
+**참고**: 실행 파일은 최적화되어 있어 빠르게 다운로드하고 실행할 수 있습니다.
 
 ### 방법 2: 소스 코드에서 실행
 
@@ -49,10 +53,21 @@ python gui_app.py
    pip install -r requirements.txt
    ```
 3. 실행 파일 빌드:
-   ```bash
-   build_exe.bat
-   ```
+   - **기본 빌드** (빠른 빌드):
+     ```bash
+     build_exe.bat
+     ```
+   - **최적화 빌드** (작은 파일 크기, 권장):
+     ```bash
+     BUILD_OPTIMIZED.bat
+     ```
 4. `dist` 폴더에 생성된 `AI번역검수도구.exe` 실행
+
+**최적화 빌드의 장점**:
+
+- 불필요한 패키지 제외로 파일 크기 감소 (약 30-50% 작아짐)
+- 더 빠른 다운로드 속도
+- 동일한 기능 제공
 
 ## 사용 방법
 

@@ -23,7 +23,7 @@ if exist dist rmdir /s /q dist
 if exist build rmdir /s /q build
 if exist "AI번역검수도구.spec" del /q "AI번역검수도구.spec"
 
-REM 실행 파일 빌드
+REM 실행 파일 빌드 (기본 빌드 - 빠른 빌드)
 pyinstaller --onefile --windowed --name "AI번역검수도구" --icon=NONE --add-data "translation_engine.py;." gui_app.py
 
 if errorlevel 1 (
